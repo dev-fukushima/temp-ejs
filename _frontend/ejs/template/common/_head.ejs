@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <script>(function(u){
+  if(/trident/.test(u)) {document.getElementsByTagName('html')[0].className='is-ie';}
+  if(/msie/.test(u)) {document.getElementsByTagName('html')[0].className='is-ie';}
+  if(/android/.test(u)) {document.getElementsByTagName('html')[0].className='is-and';}
+  if(/firefox/.test(u)) {document.getElementsByTagName('html')[0].className='is-ff';}
+  if(/mac/.test(u)) {document.getElementsByTagName('html')[0].className='is-mac';}
+  })(window.navigator.userAgent.toLowerCase());
+</script>
+  <title><%= data.pagetitle %></title>
+  <meta name="description" content="<%= data.pagedescription %>">
+<meta name="keywords" content="<%= data.pagekeyword %>">
+<meta property="og:title" content="<%= data.pagetitle %>" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="<%= data.pageurl %>" />
+<meta property="og:image" content="/assets/img/common/ogp.png" />
+<meta property="og:site_name" content="" />
+<meta property="og:description" content="<%= data.pagedescription %>" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="<%= data.pagetitle %>" />
+<meta name="twitter:description" content="<%= data.pagedescription %>" />
+<meta name="twitter:image" content="/assets/img/common/ogp.png" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com/" />
+<link rel="dns-prefetch" href="//ajax.googleapis.com/" />
+<link rel="dns-prefetch" href="//code.ionicframework.com/" />
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="stylesheet" href="<%= data.rootPath %>assets/css/common.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="<%= data.rootPath %>assets/css/<%= data.pagecss %>.css">
+</head>
+<body class="<%= data.bodyIdname %>">

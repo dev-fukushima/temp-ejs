@@ -1,0 +1,27 @@
+<div class="breadcrumbs">
+  <ul class="breadcrumbs_list" typeof="BreadcrumbList" vocab="https://schema.org/">
+  <li class="breadcrumbs_item">
+    <span property="itemListElement" typeof="ListItem">
+    <a property="item" typeof="WebPage" title="株式会社セブンネットショッピング"  class="btn" href="/">
+      TOP
+    </a>
+    <meta property="position" content="1">
+    </span>
+  </li>
+  <% if(data.page === 'interview_01'){ %>
+    <li class="breadcrumbs_item">
+      <span property="itemListElement" typeof="ListItem">
+      <a property="item" typeof="WebPage" title="採用情報"  class="btn" href="/recruit/">
+        採用情報
+      </a>
+      <meta property="position" content="2">
+      </span>
+    </li>
+  <% } %>
+  <li class="breadcrumbs_item">
+    <span>
+      <%= data.pagename %>
+    </span>
+  </li>
+</ul>
+</div>

@@ -1,0 +1,64 @@
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v4.0"></script>
+<div class="out-wrapper">
+  <div class="scrollcase" data-scrollbar>
+<header class="hd">
+  <div class="hd-inner">
+    <div class="hd-inner_logoWrap">
+      <% if(data.page === 'top'){ %>
+        <h1 class="hd-inner_logo">
+      <% } else { %>
+        <p class="hd-inner_logo">
+      <% } %>
+        <a data-pjax href="/">
+          <%- include('../parts/_logo',data); %>
+        </a>
+    <% if(data.page === 'top'){ %>
+      </h1>
+    <% } else { %>
+      </p>
+    <% } %>
+    <div class="hd-innerMenu pc-hidden">
+      <a class="btn" id="hd-innerMenuBtn">
+        <div class="hd-innerMenuBar">
+          <span class="bar-box">
+          <span></span>
+          </span>
+        </div>
+        <span class="btn_txt cmn-ff-qsb">
+          <span class="txt_off">MENU</span>
+          <span class="txt_on">CLOSE</span>
+        </span>
+      </a>
+    </div>
+    </div>
+    <nav class="hd-inner_navi">
+      <ul class="hd-inner_naviList01">
+        <li class="hd-inner_naviItem is-linkTxt">
+          <a data-pjax href="/about/" class="btn">
+            下層ページ
+          </a>
+        </li>
+        <li class="hd-inner_naviItem is-linkTxt is-recruit">
+          <a href="https://company.7netshopping.jp/recruit/" class="btn tgl-btn btn-mega not-anchor">
+            下層ページ
+          </a>
+          <div class="tgl-body">
+              <ul class="hd-inner_naviSubList">
+                <li class="hd-inner_naviSubItem">
+                  <a data-pjax href="/recruit/interview/01/" class="btn">
+                    サブページ１
+                  </a>
+                </li>
+                <li class="hd-inner_naviSubItem">
+                  <a data-pjax href="/recruit/guideline/" class="btn">
+                    サブページ２
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

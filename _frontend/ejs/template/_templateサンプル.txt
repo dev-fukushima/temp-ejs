@@ -1,0 +1,43 @@
+<%if(data.page == 'top') {%>
+
+
+
+
+
+<%}else if(data.page == 'about') {%>
+
+
+
+
+
+<%}else if(data.page == 'maternitylife-goods') {%>
+
+
+
+
+
+<%}else if(data.page == 'ninshin-eiyou') {%>
+
+
+
+
+
+<%}else if(data.page == 'ninshin-health') {%>
+
+
+
+
+
+<%}else if(data.page == 'sitemap') {%>
+
+
+
+
+
+<%}else if(data.page == 'syussan-money') {%>
+
+
+
+
+
+<%}%>
