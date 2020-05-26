@@ -2,7 +2,7 @@
 <div class="kv">
   <h1 class="cmn-sec_ttl cmn-ff-mont">
     <span class="txt-en">ABOUT US</span>
-    <span class="txt-ja">私たちについて</span>
+    <span class="txt-ja">テキストテキスト</span>
   </h1>
 </div>
 <%- include('../parts/_breadcrumb',data); %>
@@ -10,5 +10,14 @@
   <div class="abt_inner">
   </div>
 </section>
+<ul class="tags">
+  <% data.tags.forEach(function (value, key) { %>
+    <li>
+      <a href="<%= value.url %>">
+      #<%= value.text %>
+      </a>
+    </li>
+  <% }); %>
+</ul>
 <%- include('../parts/_sns',data); %>
 </main>

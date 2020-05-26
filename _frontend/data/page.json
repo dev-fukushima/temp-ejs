@@ -3,6 +3,7 @@
 	"output":"./public/",
 	"pages":[
 		{"dir":"","filename":"index.html","page":"top","pagecss":"top","rootPath":"/","bodyIdname":"top","pagename":"トップページ","pagetitle":"トップ","pagedescription":"トップページディスクリプション","pagekeyword":"トップページキーワード"},
-		{"dir":"about/","filename":"index.html","page":"about","pagecss":"about","rootPath":"/","bodyIdname":"about","pagename":"私たちについて","pagetitle":"下層ページタイトル","pagedescription":"下層ページディスクリプション","pagekeyword":"下層ページキーワード"}
+		{"dir":"about/","filename":"index.html","page":"about","pagecss":"about","rootPath":"/","bodyIdname":"about","pagename":"私たちについて","pagetitle":"下層ページタイトル","pagedescription":"下層ページディスクリプション","pagekeyword":"下層ページキーワード",
+			"tags":[{"text":"健康","url":"/kenko/"},{"text":"食生活","url":"/shyoku/"},{"text":"腸活","url":"/choukatsu/"}]}
 	]
 }
